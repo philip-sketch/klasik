@@ -1,0 +1,28 @@
+.portfolio {
+    margin: calc(12.8rem + 8rem) 0 8rem 0;
+    padding: $main-padding;
+    background-color: #fff;
+
+    h3 { margin-bottom: 2rem;}
+
+    &--grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1.5rem;
+
+        &__item {
+            img {
+                height: 250px;
+            }
+        }
+    }
+
+    // Media Query
+    @media only screen and (max-width: $mq-2) {
+        &--grid {
+            grid-template-columns: 1fr;
+            text-align: center;
+            grid-row-gap: 2rem;
+        }
+    }
+}

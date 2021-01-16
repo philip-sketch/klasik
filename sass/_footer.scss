@@ -1,0 +1,38 @@
+.footer {
+    height: 15em;
+    background-color: #fff;
+    padding: 3rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+
+    &--everything {
+        transform: translateX(1.8rem);
+    }
+
+    img {
+        transform: translateX(-1.5rem);
+    }
+
+    &--links {
+        display: flex;
+        justify-content: space-evenly;
+        transform: translateX(-1.3rem);
+
+        &__items {
+            a {
+                text-decoration: none;
+                font-size: 1rem;
+                color: #000;
+            }
+        }
+    }
+
+    // Media Query 
+    @media only screen and (max-width: $mq-1) {
+
+        &--text {
+            transform: translateX(2.5rem);
+        }
+    }
+}

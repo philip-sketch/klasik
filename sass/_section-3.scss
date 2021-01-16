@@ -1,0 +1,32 @@
+.section-3 {
+    background-color: #fff;
+    padding: $main-padding;
+    margin-bottom: 8rem;
+    h3 { padding-bottom: 3rem;}
+
+    &__about {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 2rem;
+        h4 { padding: 0.5rem 0;}
+
+        @media only screen and (max-width: 844px) {
+            h4 { font-size: 1.4rem;}
+        }
+
+        &--item {
+            img {
+                height: 25rem;
+            }
+        }
+    }
+
+    // Media Query
+    @media only screen and (max-width: $mq-2) {
+        &__about {
+            grid-template-columns: 1fr;
+            text-align: center;
+            grid-row-gap: 2rem;
+        }
+    }
+}

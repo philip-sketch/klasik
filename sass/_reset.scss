@@ -1,0 +1,36 @@
+// Variables
+$background: #f4f4f4;
+$header-color-1: #523029;
+$header-color-2: #6B2589;
+$houses-color: #0B258C;
+$main-padding: 3.5rem 2rem;
+$grey-1: #CDC6D1;
+$grey-2: #7A777B;
+$mq-1: 768px;
+$mq-2: 634px;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-size: 10px;
+    font-family: 'Roboto', 'Fraunces';
+    line-height: 1.6;
+
+    @media only screen and (max-width: $mq-1) {
+        font-size: 8px;
+    }
+}
+
+body {
+    background-color: $background;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}

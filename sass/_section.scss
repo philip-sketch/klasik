@@ -1,0 +1,60 @@
+.section {
+    padding: $main-padding;
+    margin-top: -10rem;
+    background-color: #fff;
+    margin-bottom: 8rem;
+
+    &--services {
+        h3 { padding-bottom: 3rem;}
+
+        &__items {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-column-gap: 2rem;
+            padding-bottom: 4.5rem;
+
+            img { height: 20rem;}
+
+            @media only screen and (max-width: $mq-2) {
+                grid-template-columns: 1fr;
+                text-align: center;
+                grid-row-gap: 2rem;
+             }     
+        }
+    }
+
+    &--testimonials {
+        h3 { padding-bottom: 3rem;}
+
+        &__items {
+            &-1 {
+                display: flex;
+                align-items: flex-start;
+                margin-bottom: 2rem;
+
+                @media only screen and (max-width: $mq-2) {
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                    justify-content: center;
+                    gap: 2rem;
+                 }         
+
+                &__img{
+                    padding-left: 1rem;
+                    padding-right: 5rem;
+
+                    @media only screen and (max-width: $mq-2) {
+                        padding: 0;
+                     }             
+
+                    img {
+                        border-radius: 50%;
+                        width: 10rem;
+                        height: 10rem;
+                    }
+                }
+            }
+        }
+    }
+}

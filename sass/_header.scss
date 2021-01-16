@@ -1,0 +1,67 @@
+.header {
+    font-family: 'Fraunces';
+    background-image: url('/img/header.jpg');
+    background-position: center;
+    background-size: cover;
+    padding: 5rem 0;
+    padding-bottom: 15rem;
+    margin-top: 12.8rem;
+
+    &--text {
+        padding-top: 10%;
+        height: 100%;
+        text-align: left;
+    }
+
+    &--h1 {
+        h1 {
+            span {
+                 box-decoration-break: clone;
+                 background-color: $header-color-1;
+                 padding: 1rem;
+                 color: #fff;   
+
+                 @media only screen and (max-width: $mq-2) {
+                    display: block;
+                    text-align: center;
+                 }         
+            }
+        }
+    }
+
+    &--p {
+        padding-right: 25rem;
+        margin-top: -0.5rem;
+
+        @media only screen and (max-width: $mq-2) {
+           padding-right: 0;
+        }
+
+        p {
+            margin-top: 0.5rem;
+
+            span {
+                background-color: $header-color-2;
+                display: inline-block;
+                padding: 1rem;
+
+                @media only screen and (max-width: $mq-2) {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    &--logo {
+        margin-top: 0.5rem;
+
+        &__items {
+            color: #fff;
+        }
+
+        @media only screen and (max-width: $mq-2) {
+            text-align: center;
+         }
+ 
+    }
+}
